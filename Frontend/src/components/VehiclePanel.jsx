@@ -5,7 +5,7 @@ import { RiArrowDownWideLine } from "react-icons/ri";
 const VehiclePanel = (props) => {
     return (
         <>
-            <h3 className='text-2xl font-semibold mt-4 mb-7 flex gap-6 items-center justify-center w-full'>Which Vehicle you'd ike: <RiArrowDownWideLine onClick={() => { props.setVehiclePanelOpen(false) }} /> </h3>
+            <h3 className='text-2xl font-semibold mt-4 mb-7 flex gap-6 items-center justify-center w-full'>Prefer a Vehicle: <RiArrowDownWideLine onClick={() => { props.setVehiclePanelOpen(false) }} /> </h3>
 
             <div onClick={() => {
                 props.setConfirmRidePanel(true)
@@ -21,7 +21,7 @@ const VehiclePanel = (props) => {
             </div>
 
             <div onClick={() => {
-                props.selectVehicle("motocycle")
+                props.selectVehicle("motorcycle")
                 props.setConfirmRidePanel(true)
             }} className='flex w-full border-2 active:border-black mb-2 rounded-xl p-3 items-center justify-center'>
                 <img className='h-10' src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_368,w_552/v1649231091/assets/2c/7fa194-c954-49b2-9c6d-a3b8601370f5/original/Uber_Moto_Orange_312x208_pixels_Mobile.png" alt="motorcycle image" />
