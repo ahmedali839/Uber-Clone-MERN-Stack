@@ -12,7 +12,7 @@ import WaitingForDriver from '../components/WaitingForDriver';
 import { RiArrowTurnForwardFill } from 'react-icons/ri'
 import { SocketContext } from "../context/SocketContext"
 import { useNavigate } from "react-router-dom"
-// import { socketContext } from "../context/SocketContext"
+
 
 import { UserDataContext } from "../context/UserContext"
 import LiveTracking from '../components/LiveTracking'
@@ -47,7 +47,7 @@ const Home = () => {
 
   useEffect(() => {
 
-    socket.emit("join", { userType: "user", userId: user._id })
+    socket.emit("join", { userType: "user", userId: user?._id })
 
   }, [user])
 
