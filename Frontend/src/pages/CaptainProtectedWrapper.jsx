@@ -30,7 +30,7 @@ const CaptainProtectedWrapper = ({ children }) => {
         navigate("/captain-login")
       }
     }).catch(err => {
-      console.error(err);
+      // console.error(err);
       localStorage.removeItem("token")
       navigate("/captain-login")
     })
