@@ -14,7 +14,7 @@
     "@gsap/react": "^2.1.2",
     "@react-google-maps/api": "^2.20.7",
     "@remixicon/react": "^4.6.0",
-    "axios": "^1.10.0",
+    "axios": "^1.12.2",
     "framer-motion": "^12.23.21",
     "gsap": "^3.13.0",
     "react": "^19.1.0",
